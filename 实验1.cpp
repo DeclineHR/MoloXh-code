@@ -32,3 +32,27 @@ int main() {
 	}
 	return 0;
 }
+
+//2. 编写一个程序，创建一个包含 8 个元素的 int 类型数组，
+// 分别把数组元素设置为 2 的前 8 次幂。
+// 使用 for 循环设置数组元素的值，使用 do while 循环显示数组元素的值
+#include<stdio.h>
+int main() {
+	int arr[8] = {1,1,1,1,1,1,1,1};
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j <= i; j++) {
+			arr[i] *= 2;
+		}
+	}
+	int p = -1;
+	do { 
+		p++;
+		printf("%d\n", arr[p]); 
+	} 
+	while (p < 7);
+	//for (int i = 0; i < 8; i++) {
+	//	printf("%d\n", arr[i]);
+	//}
+
+	return 0;
+}
