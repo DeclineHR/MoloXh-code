@@ -39,14 +39,22 @@ void printarr(T arr[], int len) {
 }
 
 void test1() {
+	//测试arr数组类型
 	char arr[] =  "badce";
 	int len = sizeof(arr) / sizeof(arr[0]);
 	sort(arr, len);
 	printarr(arr, len);
 }
-
+void test2() {
+	//测试int数组类型
+	int arr2[] = { 2,5,6,4,3,1 };
+	int len2 = sizeof(arr2) / sizeof(arr2[0]);
+	sort(arr2, len2);
+	printarr(arr2, len2);
+}
 int main() {
 	test1();
+	test2();
 	system("pause");
 	return 0;
 }
