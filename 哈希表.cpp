@@ -24,7 +24,7 @@ using namespace std;
      for (int j = 0; j < 100; j++) {
          if (table[j] > 0) {
              cout << "数字" << j << "出现了" 
-                 << abc[j] << "次" << endl;
+                 << table[j] << "次" << endl;
          }
      }
      system("pause");
